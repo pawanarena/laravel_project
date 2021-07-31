@@ -1,13 +1,15 @@
-## About Laravel
+## Setup Laravel
+1.clone the project
+2.copy the .env.example and change to .env
+3.run the following command
+php artisan key:generate
+composer update
+php artisan migrate
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## API
+To find the api,go to route folder and api.php. 
+To access the api,user need the authorization token(which is '2S7rhsaq9X1cnfkMCPHX64YsWYyfe1he')
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## View point 
+if i get more time, I would have written the test to check the api, refactor the controller code and normalize the database.  
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
