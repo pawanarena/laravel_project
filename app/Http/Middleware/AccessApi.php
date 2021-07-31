@@ -15,15 +15,6 @@ class AccessApi
      */
     public function handle($request, Closure $next)
     {
-        // $token = request('key');
-        // if ($token != '2S7rhsaq9X1cnfkMCPHX64YsWYyfe1he') { 
-        //     return response([
-        //         'error' => 2,
-        //         'message' => ["Access Denied"]
-        //     ]);
-        // }
-        // return $next($request);
-
         $api_keys = array('2S7rhsaq9X1cnfkMCPHX64YsWYyfe1he');
 
         if ($request->header('Authorization')) {
