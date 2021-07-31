@@ -11,5 +11,5 @@ To find the api,go to route folder and api.php.
 To access the api,user need the authorization token(which is '2S7rhsaq9X1cnfkMCPHX64YsWYyfe1he')
 
 ## View point 
-if i get more time, I would have written the test to check the api, refactor the controller code and normalize the database.  
+if i get more time, I would have written the test to check the api, refactor the controller code, normalize the database and more about readme documentaion.  
 
