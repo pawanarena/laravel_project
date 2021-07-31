@@ -14,6 +14,7 @@ use App\Http\Controllers\HotelApiController;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-
-Route::get('/list', [HotelApiController::class , 'list']);
-Route::post('/hotel', [HotelApiController::class , 'store']);
+Route::group(['prefix' => 'v1','middleware' => 'AccessApi'], function () {
+    Route::get('/list', [HotelApiController::class , 'list']);
+    Route::post('/hotel', [HotelApiController::class , 'store']);
+});
